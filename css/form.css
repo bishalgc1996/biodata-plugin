@@ -1,0 +1,302 @@
+/* Custom styles for the registration form */
+form#biodata-registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form#biodata-registration-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form#biodata-registration-form input[type="text"],
+form#biodata-registration-form input[type="email"],
+form#biodata-registration-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form#biodata-registration-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form#biodata-registration-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form#biodata-registration-form p.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Additional styles as needed */
+
+
+/* Custom styles for the login form */
+form#biodata-login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form#biodata-login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form#biodata-login-form input[type="text"],
+form#biodata-login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form#biodata-login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form#biodata-login-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form#biodata-login-form p.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Additional styles as needed */
+
+
+ /* Form container */
+ #biodata-user-details-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Form labels */
+#biodata-user-details-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form inputs */
+#biodata-user-details-form input[type="text"],
+#biodata-user-details-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Submit button */
+#biodata-user-details-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Submit button hover effect */
+#biodata-user-details-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+ /* Custom styling for the occupation select dropdown */
+ .occupation-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styling for the dropdown arrow */
+.occupation-select:after {
+  content: '\f107';
+  font-family: 'Font Awesome';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+.biodata-card {
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.biodata-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.biodata-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.biodata-card-occupation {
+  font-size: 14px;
+  color: #888;
+}
+
+.biodata-card-content {
+  margin-bottom: 15px;
+}
+
+.biodata-card-details {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.biodata-card-footer {
+  text-align: right;
+}
+
+.biodata-card-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.biodata-card-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .biodata-card {
+      padding: 15px;
+  }
+  
+  .biodata-card-title {
+      font-size: 20px;
+  }
+  
+  .biodata-card-occupation {
+      font-size: 12px;
+  }
+  
+  .biodata-card-details {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .biodata-card {
+      padding: 15px;
+  }
+  
+  .biodata-card-title {
+      font-size: 18px;
+  }
+  
+  .biodata-card-occupation {
+      font-size: 12px;
+  }
+  
+  .biodata-card-details {
+      font-size: 12px;
+  }
+}
+
+
+.biodata-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.biodata-filter-form {
+  display: flex;
+  align-items: center;
+}
+
+.biodata-filter-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  margin:1rem;
+  padding: 8px 40px;
+  background-color: #5d704b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a6abb1;
+}
+
+.biodata-wrapper {
+  text-align: center;
+  font-size: 2rem;
+  font-weight:bold;
+}
+
+.biodata-wrapper p:nth-of-type(2) {
+  display: none;
+}
