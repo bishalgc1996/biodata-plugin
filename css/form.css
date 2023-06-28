@@ -300,3 +300,12 @@ button:hover {
 .biodata-wrapper p:nth-of-type(2) {
   display: none;
 }
+
+
+.error-message {
+  color: red;
+}
+
+.error {
+  border: 1px solid red;
+}

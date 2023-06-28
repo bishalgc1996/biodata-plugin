@@ -75,6 +75,8 @@ class BiodataCreator
 
             $form_html .= '<label for="password">Password:</label>';
             $form_html .= '<input type="password" name="password" id="password" required>';
+            $form_html .= '<span id="password-error" class="error-message"></span>
+            ';
 
             // ...
 
@@ -355,9 +357,6 @@ class BiodataCreator
             'supports'            => array('title', 'editor'),
             'menu_icon'           => 'dashicons-businessman', // Set the appropriate icon
         );
-
-        register_post_type('biodata', $args);
-
 
         register_post_type('biodata', $args);
     }
