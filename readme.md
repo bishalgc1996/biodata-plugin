@@ -77,4 +77,4 @@ The Biodata Creator plugin allows for further customization according to specifi
 
 
 ### Support:
-If you encounter any issues or have questions regarding the Biodata Creator plugin, please contact our support team at [support@example.com</p>
+If you encounter any issues or have questions regarding the Biodata Creator plugin, please contact our support team at gcbishal03@gmail.com</p>
