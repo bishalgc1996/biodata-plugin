@@ -59,7 +59,7 @@ class BiodataPending
 
 
 
-    echo '<table>';
+    echo '<table class="custom-table">';
     echo '<thead><tr><th>Personal Info</th><th>Education</th><th>Experience</th><th>About Me</th><th>Occupation</th><th>Status</th><th>Action</th></tr></thead>';
     echo '<tbody>';
 
