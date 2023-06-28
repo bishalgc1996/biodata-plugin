@@ -126,6 +126,12 @@ class BiodataPending
       update_user_meta($user_id, 'biodata_user_details', $user_details);
 
       echo 'User status updated to "approved" successfully.';
+
+      $current_page_url = admin_url() . $_SERVER['REQUEST_URI'];
+      
+      wp_redirect($current_page_url);
+
+      
     }
 
     wp_die();
