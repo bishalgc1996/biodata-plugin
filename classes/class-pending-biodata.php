@@ -85,13 +85,13 @@ class BiodataPending
 
   public  function enqueue_admin_styles()
   {
-    wp_enqueue_style('admin-styles', plugin_dir_url(__FILE__) . 'admin-styles.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('admin-styles', plugin_dir_url(__FILE__) . '../admin/css/admin-styles.css', array(), '1.0.0', 'all');
   }
 
   public function enqueue_admin_scripts()
   {
     // Enqueue your custom admin script
-    wp_enqueue_script('my-admin-script', plugin_dir_url(__FILE__) . 'js/admin-script.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('my-admin-script', plugin_dir_url(__FILE__) . '../admin/js/admin-script.js', array('jquery'), '1.0', true);
 
     // Localize the script with custom data
     wp_localize_script('my-admin-script', 'myAjax', array(

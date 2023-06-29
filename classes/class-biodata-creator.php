@@ -23,12 +23,9 @@ class BiodataCreator
 
     public function init()
     {
-
-
         // Register shortcode for user details form
         add_shortcode('biodata_user_details_form', array($this, 'render_user_details_form'));
         add_action('wp', array($this, 'process_user_details'));
-
         add_action('admin_init', array($this, 'auto_select_custom_taxonomy_term'));
     }
 
