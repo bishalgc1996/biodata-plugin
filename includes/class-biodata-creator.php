@@ -32,8 +32,8 @@ class BiodataCreator
     public function enqueue_scripts()
     {
         // Enqueue plugin's CSS and JavaScript files
-        wp_enqueue_style('biodata-plugin-style', plugins_url('../css/form.css', __FILE__));
-        wp_enqueue_script('biodata-plugin-script', plugins_url('../js/script.js', __FILE__), array('jquery'), '1.0.0', true);
+        wp_enqueue_style('biodata-plugin-style', plugins_url('../assets/css/form.css', __FILE__));
+        wp_enqueue_script('biodata-plugin-script', plugins_url('../assets/js/script.js', __FILE__), array('jquery'), '1.0.0', true);
         // Localize the script and pass the AJAX URL
         wp_localize_script('biodata-plugin-script', 'ajax_object', array('ajaxurl' => admin_url('admin-ajax.php')));
     }

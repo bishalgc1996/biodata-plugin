@@ -35,35 +35,37 @@
       });
     });
 
-    // Add event listener for form submission
-    document
-      .getElementById("password")
-      .addEventListener("input", function (event) {
-        // Get the password input field
-        var passwordField = document.getElementById("password");
-        console.log("value");
-        var passwordValue = passwordField.value;
+    if (document.getElementById("password") !== null) {
+      // Add event listener for form submission
+      document
+        .getElementById("password")
+        .addEventListener("input", function (event) {
+          // Get the password input field
+          var passwordField = document.getElementById("password");
+          console.log("value");
+          var passwordValue = passwordField.value;
 
-        // Display error message
-        var passwordError = document.getElementById("password-error");
+          // Display error message
+          var passwordError = document.getElementById("password-error");
 
-        // Check if password is less than 8 characters
-        if (passwordValue.length < 8) {
-          // Disable form submission
-          document
-            .getElementById("biodata-registration-form")
-            .addEventListener("submit", function (event) {
-              event.preventDefault();
-            });
-          passwordError.style.display = "block";
-          if (passwordError !== null) {
-            passwordError.textContent =
-              "Password must be at least 8 characters long.";
+          // Check if password is less than 8 characters
+          if (passwordValue.length < 8) {
+            // Disable form submission
+            document
+              .getElementById("biodata-registration-form")
+              .addEventListener("submit", function (event) {
+                event.preventDefault();
+              });
+            passwordError.style.display = "block";
+            if (passwordError !== null) {
+              passwordError.textContent =
+                "Password must be at least 8 characters long.";
+            }
+            passwordField.classList.add("error");
+          } else {
+            passwordError.style.display = "none";
           }
-          passwordField.classList.add("error");
-        } else {
-          passwordError.style.display = "none";
-        }
-      });
+        });
+    }
   });
 })(jQuery);

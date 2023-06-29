@@ -113,9 +113,9 @@ if (!class_exists('BiodataPlugin')) :
 
     private function includes()
     {
-      require_once BDC_PLUGIN_DIR . 'classes/class-biodata-creator.php';
-      require_once BDC_PLUGIN_DIR . 'classes/class-pending-biodata.php';
-      require_once BDC_PLUGIN_DIR . 'classes/class-biodata-viewer.php';
+      require_once BDC_PLUGIN_DIR . 'includes/class-biodata-creator.php';
+      require_once BDC_PLUGIN_DIR . 'admin/class-pending-biodata.php';
+      require_once BDC_PLUGIN_DIR . 'includes/class-biodata-viewer.php';
     }
 
     public function bdc_enqueue_style()
@@ -261,3 +261,17 @@ function filter_biodata_cards_callback()
 // AJAX callback function to filter biodata cards based on occupation
 add_action('wp_ajax_filter_biodata_cards', 'filter_biodata_cards_callback');
 add_action('wp_ajax_nopriv_filter_biodata_cards', 'filter_biodata_cards_callback');
+
+
+// Define the plugin deactivation hook
+register_deactivation_hook(__FILE__, 'my_plugin_deactivation');
+
+// Deactivation hook callback function
+function my_plugin_deactivation()
+{
+  // Remove the shortcodes when the plugin is deactivated
+  remove_shortcode('biodata_register_form');
+  remove_shortcode('biodata_login_form');
+  // Remove the shortcode when the plugin is deactivated
+  remove_shortcode('biodata_user_details_form');
+}
